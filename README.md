@@ -1,4 +1,21 @@
-# Backpressure-based Ant pheromone routing for mobile ad hoc networks
+# Ant Backpressure Routing for Wireless Multi-hop Networks with Mixed Traffic Patterns
+
+## Abstract 
+A mixture of streaming and short-lived traffic presents a common yet challenging scenario for Backpressure routing in wireless multi-hop networks. Although state-of-the-art shortest-path biased backpressure (SP-BP) can significantly improve the latency of backpressure routing while retaining throughput optimality, it still suffers from the last-packet problem due to its inherent per-commodity queue structure and link capacity assignment. To address this challenge, we propose Ant Backpressure (Ant-BP), a fully distributed routing scheme that incorporates the multi-path routing capability of SP-BP into ant colony optimization (ACO) routing, which allows packets of different commodities to share link capacity in a first-in-first-out (FIFO) manner. Numerical evaluations show that Ant-BP can improve the latency and delivery ratio over SP-BP and ACO routing schemes, while achieving the same throughput of SP-BP under low-to-medium traffic loads.
+
+```latex
+@INPROCEEDINGS{erfaniantaghvayi2024ant,
+  title={Ant Backpressure Routing for Wireless Multi-hop Networks with Mixed Traffic Patterns},
+  author={Erfaniantaghvayi, Negar and Zhao, Zhongyuan and Chan, Kevin and Verma, Gunjan and Swami, Ananthram and Segarra, Santiago},
+  booktitle={IEEE Military Communications Conference (MILCOM)}, 
+  note={arXiv preprint arXiv:2408.12702},
+  year={2024},
+  pages={},
+  doi={},
+}
+```
+
+Preprint <https://arxiv.org/abs/2408.12702>
 
 ## Papers
 
@@ -6,12 +23,6 @@
 1. Zhang, Hang, Xi Wang, Parisa Memarmoshrefi, and Dieter Hogrefe. "A survey of ant colony optimization based routing protocols for mobile ad hoc networks." IEEE access 5 (2017): 24139-24161.
 2. Beegum, T. Rehannara, Mohd Yamani Idna Idris, Mohamad Nizam Bin Ayub, and Hisham A. Shehadeh. "Optimized routing of UAVs using Bio-Inspired Algorithm in FANET: A Systematic Review." IEEE Access (2023).
 
-
-## To do list
-
-- [x] `bpANT_test_mixed_opts.py` read csvfile and skip redundant test cases 
-- [x] `bpANT_test_mixed_opts.py` test if policy file already exists, and skip virtual routing if so.
-- [ ] `backpressureAnt.py` `AntHocNet.py` inherit from backpressure object rather than repeat the code
 
 ## Setting Up the Docker Container on the Server
 
