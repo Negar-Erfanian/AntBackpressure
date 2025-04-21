@@ -32,27 +32,33 @@ Preprint <https://arxiv.org/abs/2408.12702>
    docker pull tensorflow/tensorflow:2.9.1-gpu-jupyter
    ```
 
-2. **Launch the Container**  
-   Start the Docker container with the command:  
+2. **Clone the project into the directory AntBackpressure**  
+   Use the following SSH command to pull the required Docker image:  
    ```bash
-   docker run --user $(id -u):$(id -g) -it --rm -v ~/antBP:/tf/antBP -w /tf/antBP -p 8123:8888 tensorflow/tensorflow:2.9.1-gpu-jupyter
+   git clone https://github.com/Negar-Erfanian/AntBackpressure.git ~/AntBackpressure
    ```
 
-3. **Access Jupyter Interface**  
+3. **Launch the Container**  
+   Start the Docker container with the command:  
+   ```bash
+   docker run --user $(id -u):$(id -g) -it --rm -v ~/AntBackpressure:/tf/AntBackpressure -w /tf/AntBackpressure -p 8123:8888 tensorflow/tensorflow:2.9.1-gpu-jupyter
+   ```
+
+4. **Access Jupyter Interface**  
    Open the Jupyter interface in your browser, then launch a terminal from Jupyter and run the following commands to set up the environment:  
    ```bash
-   cd antBP
+   cd AntBackpressure
    pip3 install -r requirements.txt
    ```
 
-4. **Test the Setup**  
+5. **Test the Setup**  
    From the Jupyter terminal, test the setup by running:  
    ```bash
    python3 backpressureAnt.py 49
    ```  
    If any errors occur, install the missing packages as indicated in the error message.
 
-5. **Commit the Container**  
+6. **Commit the Container**  
    Once the test passes, commit the container to save the installed packages. First, get the container ID using:  
    ```bash
    docker container ls
