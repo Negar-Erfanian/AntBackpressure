@@ -35,7 +35,7 @@ Preprint <https://arxiv.org/abs/2408.12702>
 2. **Clone the project into the directory AntBackpressure**  
    Use the following SSH command to pull the required Docker image:  
    ```bash
-   git clone https://github.com/Negar-Erfanian/AntBackpressure.git ~/AntBackpressure
+   git clone git@github.com:Negar-Erfanian/AntBackpressure.git ~/AntBackpressure
    ```
 
 3. **Launch the Container**  
