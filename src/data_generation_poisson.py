@@ -22,7 +22,7 @@ size = args.size
 seed0 = args.seed
 # Create fig folder if not exist
 if not os.path.isdir(data_path):
-    os.mkdir(data_path)
+    os.makedirs(data_path, exist_ok=True)
 
 
 def poisson_graph(size, nb=4, radius=1.0, seed=None):
