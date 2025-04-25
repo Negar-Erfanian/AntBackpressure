@@ -1,6 +1,6 @@
 #!/bin/bash
 
-size=100
+size=10
 seed=100
 # for gtype in 'ba' 'er' 'grp' 'ws'; do
 #   datapath="./data/data_${gtype}_${size}"

@@ -33,5 +33,5 @@ for schemes in '6' '1' '3' ; do
         if [[ $running_jobs -ge $max_jobs ]]; then
             wait -n
         fi
-
+    done
 done

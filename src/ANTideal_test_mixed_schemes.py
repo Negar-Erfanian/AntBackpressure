@@ -123,6 +123,10 @@ if not os.path.isdir(log_dir):
 pkl_dir = os.path.join(FLAGS.root, "pkl")
 if not os.path.isdir(pkl_dir):
     os.mkdir(pkl_dir)
+    
+out_dir = os.path.join(FLAGS.root, "out")
+if not os.path.isdir(out_dir):
+    os.mkdir(out_dir)
 
 # Get a list of available GPUs
 if use_gnn:
